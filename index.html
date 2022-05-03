@@ -50,7 +50,7 @@
             <div class="row">
                 <h3>Boleta de Autorizacion de Salida</h3>
 
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h4>DATOS:</h4>
 
                 <form action="">
                     <!--    NOMBRE  -->
@@ -72,7 +72,20 @@
                             <i class="fas fa-calendar input-group-text"></i>
                         </div>
 
-                        <input type="datetime-local" class="form-control" aria-label="datetime-local" aria-describedby="basic-addon1">
+                        <input type="datetime-local" class="form-control" placeholder="Tu Oficina" aria-describedby="basic-addon1">
+                    </div>
+
+                    <!--    OFICINA  -->
+                    <div class="input-group mb-3">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-solid fa-building input-group-text"></i>
+
+                            </div>
+
+                            <input type="text" class="form-control" placeholder="Tu Oficina" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+        
                     </div>
 
                     <!--    MOTIVO      -->
@@ -122,10 +135,26 @@
                         </div>
                         <textarea name="" cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
 
+                    <button type="submit" class="btn btn-primary btn-block mb-5" >Enviar</button>
+
+                    
 
                     <!--    FIRMAS   -->
+                    <h4>    FIRMA: </h4>
+                    <div class="m-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                        </div>
+                      </div>
+                      
+                      <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                      </div>
 
 
 
